@@ -1,0 +1,117 @@
+.hero-section {
+  box-sizing: border-box;
+  height: 100svh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .hero-text {
+    width: 70%;
+    font-size: 6.5vw;
+    text-align: center;
+    font-family: $font-family-accent;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+    color: $--dark-color;
+
+    @include media("<=sm") {
+      width: 100%;
+      font-size: 48px;
+    }
+  }
+
+  .explore-button {
+    margin-top: 2rem;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    font-size: 1.75rem;
+    font-family: $font-family-hand;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    @include media("<=sm") {
+      font-size: 1.125rem;
+      margin-top: 1.5rem;
+      padding: 0;
+    }
+  }
+}
+
+.hero-image-pollaroid {
+  z-index: -1;
+  margin: 0;
+  position: absolute;
+  // --shadow-color: 30deg 6% 61%;
+  // padding: 1rem;
+  // background-color: white;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 0.75rem;
+  // box-shadow: -0.5px 0.5px 1.1px hsl(var(--shadow-color) / 0),
+  //   -8.3px 9.3px 18.7px hsl(var(--shadow-color) / 0.55);
+
+  // .image-caption {
+  //   font-family: $font-family-hand;
+  //   font-size: 1rem;
+  //   align-self: center;
+  // }
+}
+.image-1 {
+  left: 0%;
+  top: 8%;
+  width: 12.5%;
+
+  @include media ("<=sm"){
+    width: 22%;
+    top : 18%;
+    left: 0%;
+  }
+}
+.image-2 {
+  width: 15%;
+  top: 56%;
+  left: 17.5%;
+
+  @include media ("<=sm"){
+    width: 25%;
+    top : 60%;
+    left: 5%;
+  }
+}
+.image-3 {
+  width: 12.5%;
+  top: 8%;
+  left: 45%;
+
+  @include media ("<=sm"){
+    width: 20%;
+    top : 10%;
+    left: 37%;
+  }
+}
+.image-4 {
+  width: 17.5%;
+  bottom: 0%;
+  left: 65%;
+
+  @include media ("<=sm"){
+    width: 25%;
+    bottom: 20%;
+    left: 70%;
+  }
+}
+.image-5 {
+  width: 17.5%;
+  top: 10%;
+  left: 85%;
+
+  @include media ("<=sm"){
+    width: 20%;
+    top : 20%;
+    left: 75%;
+  }
+}

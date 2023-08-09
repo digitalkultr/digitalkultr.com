@@ -1,0 +1,118 @@
+.section-latest-work {
+  margin-block: 5rem;
+  display: flex;
+  flex-flow: row wrap;
+
+  @include media("<=sm") {
+    flex-flow: column wrap;
+    margin-top: 0;
+  }
+
+  .row-1{
+    max-width: 35%;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+  
+    @include media("<=sm") {
+      flex: 1;
+      max-width: 100%;
+      padding: 0;
+    }
+    .section-title {
+  
+      .latest-work-title {
+        font-size: 3rem;
+        font-family: $font-family-accent;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.2;
+        @include media("<=sm") {
+          font-size: 2rem;
+        }
+  
+        .important {
+          display: inline-flex;
+          flex-direction: column;
+          font-family: $font-family-hand;
+          font-weight: 400;
+        }
+      }
+      .latest-work-subtitle {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .row-2{
+    flex: 1;
+    padding-top: 8rem;
+
+    @include media ("<=sm"){
+      padding-top: 2rem;
+    }
+  }
+
+
+  .latest-work-items {
+
+    display: flex;
+    justify-content: center;
+
+    .work-items {
+      display: flex;
+      flex-flow: column nowrap;
+      width:70%;
+
+      @include media ("<=sm"){
+        width: 90%;
+      }
+    }
+
+    .work-items-2{
+      display: flex;
+      flex-flow: column nowrap;
+      width: 85%;
+
+      @include media ("<=sm"){
+        width: 90%;
+      }
+      
+    }
+    
+    .work-caption{
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      margin-top: 1.5rem;  
+
+      .work-title{
+        font-size: 1.75rem;
+        margin: 0;
+
+        @include media ("<=sm"){
+          font-size: 1.25rem;
+        }
+      }
+      .work-desc{
+        font-size: 1.25rem;
+        margin: 0;
+
+        @include media ("<=sm"){
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .items-2{
+
+    margin-top: 10rem;
+
+    @include media ("<=sm"){
+      margin-top: 4rem;
+    }
+
+  }
+}

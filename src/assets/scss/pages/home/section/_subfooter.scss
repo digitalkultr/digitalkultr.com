@@ -1,0 +1,69 @@
+.subfooter-section{
+
+  margin-top:8rem;
+  margin-bottom: 4rem;
+  margin-inline: 4rem;
+  display: flex;
+  width: 50%;
+  flex-flow:column nowrap;
+
+  @include media ("<=sm"){
+    width: 100%;
+    margin-inline: 0;
+    margin-top: 4rem;
+  }
+
+
+  .subfooter-heading{
+    font-size: 72px;
+    margin: 0;
+    font-family: $font-family-accent;
+    font-weight: 400;
+    letter-spacing: -2px;
+
+    @include media("<=sm"){
+      font-size: 2.5rem
+    }
+
+    .accent{
+      font-family: $font-family-hand;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.25em;
+    }
+
+  }
+
+  .subfooter-heading:nth-child(2){
+    display: inline-flex;
+  }
+
+}
+.link-list-subfooter{
+  
+  margin-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+
+  @include media ("<=sm"){
+    margin-inline: 0;
+    flex-direction: column;
+  }
+
+  .link{
+    padding-inline: 2.5rem;
+    padding-block: 2rem;
+    border-radius: 3em;
+    font-family: $font-family-accent;
+    font-size: 1.75rem;
+    border: 1.5pt solid $--dark-color;
+
+    @include media ("<sm"){
+      font-size: 1.5rem;
+      padding-inline: 1.5rem;
+      padding-block: 1.75rem
+    }
+  }
+
+}

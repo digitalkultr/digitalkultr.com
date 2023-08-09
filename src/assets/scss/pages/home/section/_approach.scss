@@ -1,0 +1,44 @@
+.approach-section{
+
+  margin-block:10rem;
+  margin-inline: 4rem;
+  padding: 4rem;
+  background-color: #FDF18B;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+  @include media ("<=sm"){
+    flex-flow: column nowrap;
+    margin-inline: 0;
+    padding: 2rem;
+    margin-block: 4rem;
+  }
+
+  .approach-row-1{
+    width: 45%;
+    align-items: center;
+    font-family: $font-family-accent;
+    font-size: 4rem;
+
+    @include media ("<=sm"){
+      font-size: 2.5rem;
+      text-align: center;
+      align-self: center;
+      width: 100%;
+    }
+  }
+  .approach-row-2{
+    width: 45%;
+    font-size: 1.25rem;
+
+    @include media ("<=sm"){
+      font-size: 1rem;
+      text-align: center;
+      align-self: center;
+      width: 100%;
+    }
+
+  }
+
+}

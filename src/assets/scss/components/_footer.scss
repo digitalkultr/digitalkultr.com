@@ -1,0 +1,22 @@
+.footer-section{
+  margin-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  
+  .copyright{
+    font-size: 1.15rem;
+
+    @include media ("<=sm"){
+      font-size: 1rem;
+    }
+  }
+  .policy{
+    .link{
+      margin-left: 2rem;
+    }
+
+    @include media ("<=sm"){
+      display: none;
+    }
+  }
+}
