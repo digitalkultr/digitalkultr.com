@@ -1,6 +1,6 @@
 
 
-# digitalkultr-playground
+# digitalkultr.com
 
 This is the repository with the source code for [digitalkultr's website](https://digitalkultr.com/)
 
