@@ -4,7 +4,7 @@
 
 This is the repository with the source code for [digitalkultr's website](https://digitalkultr.com/)
 
-your welcome to use it, If you find it interesting, inspiring or learn something from it.
+Your welcome to use it, If you find it interesting, inspiring or learn something from it.
 
 ## Architecture
 
