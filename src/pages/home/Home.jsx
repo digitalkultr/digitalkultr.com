@@ -13,7 +13,6 @@ const Home = () => {
       <Hero/>
       <LatestWork/>
       <Approach/>
-      <SubFooter/>
     </main>
     <Footer/>
   </>

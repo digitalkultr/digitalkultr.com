@@ -25,12 +25,8 @@ const Hero = () => {
   return (
     <section ref={ref} className="hero-section container">
       <h1 className="hero-text">
-        At digitalkultr, we crafts digital experiences.
+        At digitalkultr, we crafts digital experiences for people we care and love.
       </h1>
-      <a className="explore-button">
-        Explore Our Playground
-        <img src={underline} alt=""/>
-      </a>
       <m.figure style={{y:pAni1}} className="hero-image-pollaroid image-1">
         <img src={hero_1} width="100%" height="100%"/>
       </m.figure>
