@@ -1,9 +1,10 @@
 import Navbar from "../../components/navbar/navbar"
+import AboutHeader from "./section/aboutHeader";
 const About = () => {
   return ( 
     <>
-    <Navbar/>
-    This is About Section
+      <Navbar/>
+      <AboutHeader/>
     </>
    );
 }
