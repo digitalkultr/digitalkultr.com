@@ -1,0 +1,36 @@
+.insights-hero-section {
+  box-sizing: border-box;
+  padding: 10rem 0 4rem 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .hero-text-1 {
+    width: 70%;
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: $font-family-accent;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+    color: $--dark-color;
+
+    @include media("<=sm") {
+      width: 100%;
+      font-size: 3rem;
+    }
+  }
+
+  .hero-text-2 {
+    text-align: center;
+    @include media("<=sm") {
+      font-size: 0.8rem;
+    }
+
+    @include media("<lg") {
+      font-size: 1.1rem;
+    }
+  }
+}

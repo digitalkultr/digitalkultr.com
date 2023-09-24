@@ -1,9 +1,7 @@
 const Footer = () => {
   return (
     <footer className="container footer">
-      <div className="subfooter-section">
-        <p className="subfooter-title">Let's Work Together!</p>
-      </div>
+      <p className="subfooter-title">Let's Work Together!</p>
       <div className="footer-menu">
         <div className="row-1">
           <div className="row-title">Let's Talk</div>
@@ -16,12 +14,12 @@ const Footer = () => {
         <div className="row-3">
           <div className="row-title">Our Socials</div>
           <div className="social-menu">
-          <div className="row-items">@Youtube</div>
-          <div className="row-items">@Instagram</div>
+            <div className="row-items">@Youtube</div>
+            <div className="row-items">@Instagram</div>
           </div>
         </div>
       </div>
-      <div className="footer-devider"/>
+      <div className="footer-devider" />
       <div className="footer-section">
         <div className="copyright">
           © Digitalkultr 2022. All rights reserved.

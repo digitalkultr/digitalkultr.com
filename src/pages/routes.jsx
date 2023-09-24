@@ -7,6 +7,7 @@ import {
 	Route,
 	Routes 
 } from "react-router-dom";
+import Insights from "./insights/Insights.jsx";
 
 const RoutesList = () => {
 
@@ -15,6 +16,7 @@ const RoutesList = () => {
 			<Routes>
 				<Route exact path="/" element={<Home/>}/>
 				<Route path="/about" element={<About/>}/>
+				<Route path="/insight" element={<Insights/>}/>
 			</Routes>
 		</BrowserRouter>
 	)

@@ -1,57 +1,67 @@
 .footer {
-  padding: 5rem;
+  padding: 4rem 5rem 4rem 5rem;
   margin-block: 2rem;
-  background-color: black;
+  background-color: $--dark-color;
   color: white;
 
-  .subfooter-section {
-    margin:0;
+  @include media("<=sm") {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+  .subfooter-title {
+    font-size: 4rem;
+    margin: 0;
+    font-family: $font-family-accent;
 
-    .subfooter-title{
-      font-size: 4rem;
-      margin: 0;
-      font-family: $font-family-accent;
+    @include media ("<=sm"){
+      font-size: 2.5rem;
     }
   }
 
-  .footer-menu{
+  .footer-menu {
     display: grid;
     grid-auto-columns: 1fr;
     grid-column-gap: 7rem;
     grid-row-gap: 7rem;
     grid-template-rows: auto;
-    grid-template-columns: 1fr .75fr .75fr;
+    grid-template-columns: 1fr 0.75fr 0.75fr;
     margin-top: 1.5rem;
 
-    .row-title{
-      margin-bottom: 1rem;
-      color: #1f1f1f;
+    @include media("<=sm") {
+      grid-template-columns: 1fr;
+      grid-column-gap: 3.5rem;
+      grid-row-gap: 3.5rem;
+      margin-top: 2.5rem;
     }
-    .row-items{
+
+    .row-title {
+      margin-bottom: 1rem;
+      color: $--grey-color;
+    }
+    .row-items {
       font-size: 1.5rem;
     }
-    .email-footer{
+    .email-footer {
       font-size: 1.5rem;
       color: white;
       text-decoration: underline;
       text-underline-offset: 2px;
     }
 
-    .social-menu{
+    .social-menu {
       display: flex;
       flex-direction: column;
-      gap: 1rem
+      gap: 1rem;
     }
   }
 
-  .footer-devider{
+  .footer-devider {
     height: 1px;
-    background-color: #1f1f1f;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  } 
+    background-color: $--grey-color;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 
-  .footer-section { 
+  .footer-section {
     display: flex;
     justify-content: space-between;
 
