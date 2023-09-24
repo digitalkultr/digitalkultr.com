@@ -1,7 +1,7 @@
 .section-latest-work {
-  margin-block: 5rem;
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 10rem;
 
   @include media("<=sm") {
     flex-flow: column wrap;
@@ -63,7 +63,7 @@
     .work-items {
       display: flex;
       flex-flow: column nowrap;
-      width:70%;
+      width:60%;
 
       @include media ("<=sm"){
         width: 90%;
@@ -73,7 +73,7 @@
     .work-items-2{
       display: flex;
       flex-flow: column nowrap;
-      width: 85%;
+      width: 75%;
 
       @include media ("<=sm"){
         width: 90%;
@@ -108,7 +108,7 @@
 
   .items-2{
 
-    margin-top: 10rem;
+    margin-top: 7rem;
 
     @include media ("<=sm"){
       margin-top: 4rem;

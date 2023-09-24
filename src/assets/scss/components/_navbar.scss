@@ -17,7 +17,7 @@
     }
 
     .brand-logo-wrapper {
-      width: 150px;
+      width: 125px;
 
       @include media("<=sm") {
         width: 120px;
@@ -49,6 +49,10 @@
         .links{
 
           color: $--dark-color;
+          
+          @include media ("<=sm"){
+            
+          }
         }
       }
     }
@@ -147,6 +151,11 @@
   .nav-items {
     margin-left: 2rem;
     font-size: 1.25rem;
+    color: $--dark-color;
+
+    .links{
+      color: $--dark-color;
+    }
 
     @include media("<=sm") {
       display: flex;
@@ -155,7 +164,7 @@
       margin-left: 0;
       font-size: 1.5rem;
       padding-bottom: 1rem;
-      border-bottom: solid 1.5px;
+      border-bottom: solid 1.85px;
     }
 
     .nav-icon {
