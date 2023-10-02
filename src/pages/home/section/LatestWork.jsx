@@ -15,7 +15,7 @@ const LatestWork = () => {
           </div>
           <article className="latest-work-items items-2">
             <figure className="work-items-2" style={{ margin: 0 }}>
-              <img src={work_image2} height="100%" width="100%" />
+              <img className="work-image" src={work_image2} height="100%" width="100%" />
               <figcaption className="work-caption">
                 <h3 className="work-title">Eddy</h3>
                 <p className="work-desc">Eddy enables people that receive humanitarian or development aid to share their experiences and shape the type and quality of local services.</p>
@@ -26,7 +26,7 @@ const LatestWork = () => {
         <div className="row-2">
           <article className="latest-work-items">
             <figure className="work-items" style={{ margin: 0 }}>
-              <img src={work_image} height="100%" width="100%" />
+              <img className="work-image" src={work_image} height="100%" width="100%" />
               <figcaption className="work-caption">
                 <h3 className="work-title">Studee</h3>
                 <p className="work-desc">Studee enables people that receive humanitarian or development aid to share their experiences and shape the type and quality of local services.</p>

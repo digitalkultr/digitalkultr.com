@@ -1,9 +1,8 @@
 .hero-section {
   height: 100svh;
   overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 
   .hero-heading{
 

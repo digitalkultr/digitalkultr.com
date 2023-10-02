@@ -7,10 +7,10 @@ const Hero = () => {
     <section className="hero-section container">
       <div className='hero-heading'>
         <h1 className='hero-text'>
-          <div className="hero-text-row">We are <span className="inline-illu">digitalkultr <img className="illu-header" src={illu_1}/></span>,</div>
-          <div className="hero-text-row">a digital agency based in Bandung.</div> 
-          <div className="hero-text-row">We crafts digital <span className="inline-illu">experience <img className="illu-header"src={illu_2}/></span></div> 
-          <div className="hero-text-row"><span className="inline-illu"><img className="illu-header" src={illu_3}/>for the people we care & love.</span></div>
+          <div className="hero-text-row">We are <span className="inline-illu">digitalkultr <img className="illu-header" src={illu_1} /></span>,</div>
+          <div className="hero-text-row">a digital agency based in Bandung.</div>
+          <div className="hero-text-row">We crafts digital <span className="inline-illu">experience <img className="illu-header" src={illu_2} /></span></div>
+          <div className="hero-text-row"><span className="inline-illu"><img className="illu-header" src={illu_3} />for the people we care & love.</span></div>
         </h1>
       </div>
     </section>
