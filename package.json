@@ -1,5 +1,5 @@
 {
-  "name": "digitalkultr-playground",
+  "name": "digitalkultr.com",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -15,7 +15,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
-    "resize-observer-polyfill": "^1.5.1",
     "sass": "^1.62.1"
   },
   "devDependencies": {
