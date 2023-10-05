@@ -1,50 +1,52 @@
-.approach-section{
-
+.approach-section {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  margin-block: 10rem;
+  justify-content: space-between;
+  padding: 4rem;
+  margin-bottom: 7rem;
+  background-color: $--dark-color;
+  color: $--background-color;
+  border-radius: 2.5rem;
 
-  @include media ("<=sm"){
+  @include media("<=sm") {
     flex-flow: column nowrap;
     margin-inline: 0;
     margin-block: 4rem;
   }
 
-  .approach-row-1{
+  .approach-row-1 {
+    display: grid;
+    place-items: center;
     width: 45%;
-    align-items: center;
     font-family: $font-family-accent;
     font-size: 4rem;
 
-    @include media ("<=sm"){
+    @include media("<=sm") {
       font-size: 2.5rem;
       text-align: center;
       align-self: center;
       width: 100%;
     }
   }
-  .approach-row-2{
-    width: 35%;
-    font-size: 1.25rem;
+  .approach-row-2 {
+    width: 45%;
+    font-size: 1.125rem;
 
-    .approach-title{
+    .approach-title {
       font-family: $font-family-accent;
       font-weight: 400;
       font-size: 2.5rem;
 
-      @include media("<=sm"){
+      @include media("<=sm") {
         font-size: 2rem;
       }
     }
 
-    @include media ("<=sm"){
+    @include media("<=sm") {
       font-size: 1rem;
       text-align: center;
       align-self: center;
       width: 100%;
     }
-
   }
-
 }

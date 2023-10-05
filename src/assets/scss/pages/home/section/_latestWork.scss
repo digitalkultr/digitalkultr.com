@@ -8,19 +8,18 @@
     margin-top: 0;
   }
 
-  .row-1{
+  .row-1 {
     max-width: 35%;
     padding-left: 5rem;
     display: flex;
     flex-direction: column;
-  
+
     @include media("<=sm") {
       flex: 1;
       max-width: 100%;
       padding: 0;
     }
     .section-title {
-  
       .latest-work-title {
         font-size: 3rem;
         font-family: $font-family-accent;
@@ -30,7 +29,7 @@
         @include media("<=sm") {
           font-size: 2rem;
         }
-  
+
         .important {
           display: inline-flex;
           flex-direction: column;
@@ -45,74 +44,77 @@
     }
   }
 
-  .row-2{
+  .row-2 {
     flex: 1;
     padding-top: 8rem;
 
-    @include media ("<=sm"){
+    @include media("<=sm") {
       padding-top: 2rem;
     }
   }
 
-
   .latest-work-items {
-
     display: flex;
     justify-content: center;
 
     .work-items {
       display: flex;
       flex-flow: column nowrap;
-      width:60%;
+      width: 60%;
 
-      @include media ("<=sm"){
+      @include media("<=sm") {
         width: 90%;
+      }
+
+      .work-image {
+        border-radius: 7%;
       }
     }
 
-    .work-items-2{
+    .work-items-2 {
       display: flex;
       flex-flow: column nowrap;
-      width: 75%;
+      width: 80%;
+      
+      .work-image {
+        border-radius: 7%;
+      }
 
-      @include media ("<=sm"){
+      @include media("<=sm") {
         width: 90%;
       }
-      
     }
-    
-    .work-caption{
+
+    .work-caption {
       display: flex;
       gap: 1rem;
       flex-direction: column;
-      margin-top: 1.5rem;  
+      margin-top: 1.5rem;
 
-      .work-title{
+      .work-title {
         font-size: 1.75rem;
         margin: 0;
 
-        @include media ("<=sm"){
+        @include media("<=sm") {
           font-size: 1.25rem;
         }
       }
-      .work-desc{
+      .work-desc {
         font-size: 1.25rem;
         margin: 0;
 
-        @include media ("<=sm"){
+        @include media("<=sm") {
           font-size: 1rem;
         }
       }
     }
   }
 
-  .items-2{
-
+  .items-2 {
     margin-top: 7rem;
 
-    @include media ("<=sm"){
+    @include media("<=sm") {
       margin-top: 4rem;
     }
-
   }
 }
