@@ -1,27 +1,27 @@
 import illu from "../../../assets/img/illu.png"
-import { motion as m } from 'framer-motion'
+import AnimatedText from "../../../components/AnimatedText"
 
 
 const Hero = () => {
 
-  const textRow1 = "We're digitalkultr, a digital agency crafting digital experiences for the ones we cherish."
 
-  const wordAni = {
-    hidden: { y: "100%" },
-    visible: (i) => ({
-      y: "0%",
-      transition: { duration: 0.4, delay: 0.09 * i }
-    }),
-  }
+  const placeholderText = [
+    { type: "span", text: "We're " },
+    { type: "special1", text: "digitalkultr" },
+    { type: "span",text: " a digital agency crafting"},
+    { type: "special2", text: "digital experiences" },
+    { type: "span", text: "for the ones we cherish." },
+  ];
 
 
   return (
-    <section className="hero-section container">
+
+<section className="hero-section container">
       <div className='hero-text-container'>
         <h1 data-srcroll data-scroll-speed="0.3" className="hero-text">
           {
-            textRow1.split(" ").map((word, index) => {
-              return <div key={index} className="word-mask"><m.span className="word" variants={wordAni} initial="hidden" animate="visible" custom={index}>{word}&nbsp;</m.span></div>
+            placeholderText.map((item, index) => {
+              return <AnimatedText {...item} key={index} />;
             })
           }
         </h1>
