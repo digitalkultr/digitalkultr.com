@@ -16,6 +16,14 @@
     @include media(">=2xl") {
       max-width: 62%;
     }
+    
+    @include media ("<=sm"){
+      max-width: 100%;
+    }
+
+    @include media (">=md", "<lg"){
+      max-width: 90%;
+    }
 
     .hero-text {
       position: relative;
@@ -34,6 +42,14 @@
         font-size: 96px;
       }
 
+      @include media ("<=sm"){
+        font-size: 42px;
+      }
+
+      @include media (">=md", "<=lg"){
+        font-size: 72px;
+      }
+  
       .word-mask {
         overflow: hidden;
         position: relative;
@@ -45,7 +61,7 @@
       }
       .word-mask:nth-child(2) {
         font-family: $font-family-hand;
-        font-size: 92;
+        font-size: 1.02em;
         font-weight: 500;
         background-image: url(/src/assets/icon/underline.svg);
         background-position: bottom 0.02em left;
@@ -54,7 +70,7 @@
       }
       .word-mask:nth-child(7) {
         font-family: $font-family-hand;
-        font-size: 92;
+        font-size: 1.02em;
         font-weight: 500;
         background-image: url(/src/assets/icon/underline.svg);
         background-position: bottom 0.02em left;
@@ -63,7 +79,7 @@
       }
       .word-mask:nth-child(8) {
         font-family: $font-family-hand;
-        font-size: 92;
+        font-size: 1.02em;
         font-weight: 500;
         background-image: url(/src/assets/icon/underline.svg);
         background-position: bottom 0.02em left;
@@ -75,13 +91,35 @@
 
   .illu-container {
     height: 40%;
+    
     .illu {
       height: 100%;
+
+      @include media ("<=sm"){
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @include media ("<=sm"){
+      height: 30%;
+
+    }
+
+    @include media (">=md", "<=lg"){
+      height: 30%;
     }
   }
 
   .cta-container {
     height: 8%;
+    display: flex;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: translateY(10%);
+    }
+  
 
     .cta-header {
       position: relative;
@@ -93,6 +131,14 @@
       @include media(">=2xl") {
         font-size: 1.75rem;
       }
+
+      @include media ("<=sm"){
+        font-size: 1.25rem;
+      }
     }
+  }
+
+  .is-scrolled {
+    opacity: 0;
   }
 }

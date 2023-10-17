@@ -10,7 +10,7 @@ const LatestWork = () => {
           <div className="section-title">
             <div className="latest-work-subtitle">Our Futured Work</div>
             <h2 className="latest-work-title">
-              We craft digital products and experiences that help businesses <span className="important">thrive.<img src={underline} alt="" /></span>
+              We craft digital products and experiences that help businesses
             </h2>
           </div>
           <article className="latest-work-items items-2">
