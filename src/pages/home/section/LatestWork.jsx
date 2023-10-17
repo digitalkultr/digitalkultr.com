@@ -1,4 +1,3 @@
-import underline from "../../../assets/icon/underline.svg";
 import work_image from "../../../assets/img/work_image/studee.png";
 import work_image2 from "../../../assets/img/work_image/eddy2.png";
 
@@ -10,7 +9,7 @@ const LatestWork = () => {
           <div className="section-title">
             <div className="latest-work-subtitle">Our Futured Work</div>
             <h2 className="latest-work-title">
-              We craft digital products and experiences that help businesses
+              We design <span className="important">digital products</span> and experiences to support business <span className="important">growth.</span>
             </h2>
           </div>
           <article className="latest-work-items items-2">
